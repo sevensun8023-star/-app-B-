@@ -1,0 +1,146 @@
+.chapters-page {
+  margin: -16px -16px 0;
+  min-height: calc(100dvh - 80px);
+  background: #fff;
+}
+
+.chapters-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  background: linear-gradient(135deg, #fff5eb, #ffe8d6);
+  border-bottom: 1px solid #f5d5bc;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.chapters-header h1 {
+  flex: 1;
+  margin: 0;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 600;
+  padding-right: 32px;
+}
+
+.header-back {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.chapter-tree {
+  padding: 8px 0 20px;
+}
+
+.tree-node {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.practice-link {
+  display: block;
+  width: 100%;
+  border: none;
+  background: none;
+  padding: 0;
+  text-align: left;
+  cursor: pointer;
+  color: inherit;
+  font: inherit;
+}
+
+.practice-link:active {
+  background: #fafafa;
+}
+
+.node-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 14px 16px 14px 12px;
+}
+
+.toggle-btn {
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: none;
+  background: #f5a623;
+  color: white;
+  font-size: 16px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-top: 2px;
+  padding: 0;
+}
+
+.toggle-placeholder {
+  flex-shrink: 0;
+  width: 22px;
+}
+
+.node-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.node-title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.node-title {
+  font-size: 15px;
+  font-weight: 500;
+  color: #333;
+}
+
+.node-count {
+  font-size: 12px;
+  color: #999;
+  flex-shrink: 0;
+}
+
+.node-stats {
+  font-size: 12px;
+  color: #999;
+  line-height: 1.5;
+}
+
+.node-children {
+  position: relative;
+  margin-left: 22px;
+  padding-left: 16px;
+  border-left: 2px solid #f5a623;
+}
+
+.node-children .tree-node:last-child {
+  border-bottom: none;
+}
+
+.depth-1 .node-title {
+  font-size: 14px;
+}
+
+.depth-2 .node-title {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.depth-2 .node-row {
+  padding-left: 8px;
+}

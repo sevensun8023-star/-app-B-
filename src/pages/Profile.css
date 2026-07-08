@@ -1,0 +1,84 @@
+.profile-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.profile-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 16px;
+  background: var(--card);
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.profile-stat .big {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.profile-section {
+  margin-bottom: 24px;
+}
+
+.profile-section h2 {
+  font-size: 15px;
+  margin: 0 0 12px;
+}
+
+.record-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.record-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 16px;
+  background: var(--card);
+  border-radius: 10px;
+  border: 1px solid var(--border);
+}
+
+.record-item strong {
+  display: block;
+  font-size: 14px;
+}
+
+.record-date {
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.record-score {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.record-score.pass {
+  color: var(--success);
+}
+
+.record-score.fail {
+  color: var(--danger);
+}
+
+.danger-btn {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--danger);
+  background: var(--danger-light);
+  color: var(--danger);
+  border-radius: 10px;
+  font-size: 14px;
+  cursor: pointer;
+}

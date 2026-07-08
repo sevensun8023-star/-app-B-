@@ -1,0 +1,102 @@
+.question-card {
+  background: var(--card);
+  border-radius: 16px;
+  padding: 20px;
+  border: 1px solid var(--border);
+}
+
+.question-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.type-badge {
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  background: var(--primary-light);
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.progress-text {
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.question-text {
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0 0 20px;
+  font-weight: 600;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.option {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 14px 16px;
+  border: 2px solid var(--border);
+  border-radius: 12px;
+  background: var(--bg);
+  cursor: pointer;
+  text-align: left;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--text);
+  transition: all 0.2s;
+}
+
+.option:hover:not(:disabled) {
+  border-color: var(--primary);
+}
+
+.option.selected {
+  border-color: var(--primary);
+  background: var(--primary-light);
+}
+
+.option.correct {
+  border-color: var(--success);
+  background: var(--success-light);
+}
+
+.option.wrong {
+  border-color: var(--danger);
+  background: var(--danger-light);
+}
+
+.option-letter {
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--card);
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.explanation {
+  margin-top: 16px;
+  padding: 14px;
+  border-radius: 10px;
+  background: var(--warning-light);
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--text);
+}
+
+.explanation strong {
+  color: var(--warning);
+}

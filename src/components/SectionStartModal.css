@@ -1,0 +1,99 @@
+.section-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 300;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.section-modal {
+  width: 100%;
+  max-width: 320px;
+  background: #fff;
+  border-radius: 16px;
+  padding: 24px 20px 16px;
+  animation: modalIn 0.2s ease;
+}
+
+@keyframes modalIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.section-modal h2 {
+  margin: 0 0 8px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.section-modal-info {
+  margin: 0 0 20px;
+  font-size: 14px;
+  color: #666;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.section-modal-info strong {
+  color: #f5a623;
+}
+
+.section-modal-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.modal-btn {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.modal-btn.continue {
+  background: #f5a623;
+  color: white;
+}
+
+.modal-btn.continue:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.modal-btn.restart {
+  background: #fff;
+  color: #f5a623;
+  border: 2px solid #f5a623;
+}
+
+.section-modal-hint {
+  margin: 12px 0 0;
+  font-size: 12px;
+  color: #999;
+  text-align: center;
+}
+
+.section-modal-cancel {
+  display: block;
+  width: 100%;
+  margin-top: 12px;
+  padding: 10px;
+  border: none;
+  background: none;
+  color: #999;
+  font-size: 14px;
+  cursor: pointer;
+}

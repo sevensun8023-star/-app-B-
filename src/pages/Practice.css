@@ -1,0 +1,181 @@
+.practice-page {
+  margin: -16px -16px 0;
+}
+
+.practice-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 16px;
+  background: linear-gradient(135deg, #fff5eb, #ffe8d6);
+  border-bottom: 1px solid #f5d5bc;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.practice-header h1 {
+  flex: 1;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.practice-back {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+  text-decoration: none;
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+.sheet-toggle {
+  flex-shrink: 0;
+  padding: 6px 12px;
+  border: 1px solid #f5a623;
+  background: #fff;
+  color: #f5a623;
+  border-radius: 16px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.end-practice-btn {
+  flex-shrink: 0;
+  padding: 6px 12px;
+  border: none;
+  background: #f5a623;
+  color: white;
+  border-radius: 16px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.end-practice-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.header-spacer {
+  width: 48px;
+  flex-shrink: 0;
+}
+
+.random-status {
+  text-align: center;
+  padding: 8px;
+  font-size: 13px;
+  color: #f5a623;
+  font-weight: 600;
+  background: #fff8ee;
+}
+
+.practice-page .timer {
+  text-align: center;
+  padding: 8px;
+  margin: 12px 16px 0;
+  background: var(--card);
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  border: 1px solid var(--border);
+}
+
+.practice-page .timer.urgent {
+  color: var(--danger);
+  border-color: var(--danger);
+  background: var(--danger-light);
+}
+
+.practice-progress {
+  height: 4px;
+  background: var(--border);
+  margin: 12px 0 0;
+  overflow: hidden;
+}
+
+.practice-progress-fill {
+  height: 100%;
+  background: #f5a623;
+  transition: width 0.3s;
+}
+
+.practice-swipe-area {
+  padding: 16px;
+  touch-action: pan-y;
+}
+
+.practice-nav-hint {
+  text-align: center;
+  font-size: 11px;
+  color: #bbb;
+  padding: 0 16px;
+}
+
+.practice-actions {
+  padding: 12px 16px 20px;
+}
+
+.practice-page .btn-primary {
+  width: 100%;
+  padding: 14px;
+  background: #f5a623;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.practice-page .btn-primary:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.btn-outline {
+  width: 100%;
+  padding: 12px;
+  background: transparent;
+  border: 2px solid #f5a623;
+  color: #f5a623;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+.auto-hint {
+  text-align: center;
+  font-size: 13px;
+  color: #16a34a;
+  margin: 0;
+}
+
+.practice-page .empty-state {
+  text-align: center;
+  padding: 60px 20px;
+  color: var(--text-secondary);
+}
+
+.practice-page .empty-state button {
+  margin-top: 16px;
+  padding: 10px 24px;
+  background: #f5a623;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}

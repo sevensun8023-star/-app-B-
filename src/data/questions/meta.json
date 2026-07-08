@@ -1,0 +1,436 @@
+{
+  "sections": [
+    {
+      "id": "basic-safety-1",
+      "title": "安全生产知识（1）",
+      "count": 163
+    },
+    {
+      "id": "tech2-1",
+      "title": "拆除工程",
+      "count": 5
+    },
+    {
+      "id": "basic-law-1",
+      "title": "法规部分（1）",
+      "count": 111
+    },
+    {
+      "id": "basic-tech-1",
+      "title": "技术部分（1）",
+      "count": 98
+    },
+    {
+      "id": "basic-safety-2",
+      "title": "安全生产知识（2）",
+      "count": 160
+    },
+    {
+      "id": "tech2-2",
+      "title": "垂直运输",
+      "count": 2
+    },
+    {
+      "id": "basic-law-2",
+      "title": "法规部分（2）",
+      "count": 95
+    },
+    {
+      "id": "basic-tech-2",
+      "title": "技术部分（2）",
+      "count": 84
+    },
+    {
+      "id": "basic-law-3",
+      "title": "法规部分（3）",
+      "count": 89
+    },
+    {
+      "id": "basic-tech-3",
+      "title": "技术部分（3）",
+      "count": 100
+    },
+    {
+      "id": "tech2-3",
+      "title": "职业卫生",
+      "count": 3
+    },
+    {
+      "id": "basic-law-4",
+      "title": "法规部分（4）",
+      "count": 90
+    },
+    {
+      "id": "tech2-4",
+      "title": "高处作业",
+      "count": 4
+    },
+    {
+      "id": "basic-tech-4",
+      "title": "技术部分（4）",
+      "count": 82
+    },
+    {
+      "id": "basic-law-5",
+      "title": "法规部分（5）",
+      "count": 92
+    },
+    {
+      "id": "tech2-5",
+      "title": "焊接工程",
+      "count": 3
+    },
+    {
+      "id": "basic-tech-5",
+      "title": "技术部分（5）",
+      "count": 95
+    },
+    {
+      "id": "basic-law-6",
+      "title": "法规部分（6）",
+      "count": 105
+    },
+    {
+      "id": "basic-tech-6",
+      "title": "技术部分（6）",
+      "count": 109
+    },
+    {
+      "id": "tech2-6",
+      "title": "季节施工",
+      "count": 16
+    },
+    {
+      "id": "basic-law-7",
+      "title": "法规部分（7）",
+      "count": 113
+    },
+    {
+      "id": "basic-tech-7",
+      "title": "技术部分（7）",
+      "count": 100
+    },
+    {
+      "id": "tech2-7",
+      "title": "压力容器",
+      "count": 12
+    },
+    {
+      "id": "basic-law-8",
+      "title": "法规部分（8）",
+      "count": 117
+    },
+    {
+      "id": "basic-tech-8",
+      "title": "技术部分（8）",
+      "count": 106
+    },
+    {
+      "id": "tech2-8",
+      "title": "脚手架",
+      "count": 3
+    },
+    {
+      "id": "basic-law-9",
+      "title": "法规部分（9）",
+      "count": 99
+    },
+    {
+      "id": "basic-tech-9",
+      "title": "技术部分（9）",
+      "count": 103
+    },
+    {
+      "id": "tech2-9",
+      "title": "临时用电",
+      "count": 3
+    },
+    {
+      "id": "basic-tech-10",
+      "title": "技术部分（10）",
+      "count": 89
+    },
+    {
+      "id": "tech2-10",
+      "title": "模板工程",
+      "count": 4
+    },
+    {
+      "id": "basic-tech-11",
+      "title": "技术部分（11）",
+      "count": 100
+    },
+    {
+      "id": "tech2-11",
+      "title": "起重吊装",
+      "count": 2
+    },
+    {
+      "id": "basic-tech-12",
+      "title": "技术部分（12）",
+      "count": 93
+    },
+    {
+      "id": "tech2-12",
+      "title": "施工防火",
+      "count": 8
+    },
+    {
+      "id": "tech2-13",
+      "title": "土方工程",
+      "count": 7
+    },
+    {
+      "id": "special-new-1",
+      "title": "新增考题（1）",
+      "count": 70
+    },
+    {
+      "id": "special-new-2",
+      "title": "新增考题（2）",
+      "count": 84
+    },
+    {
+      "id": "special-new-3",
+      "title": "新增考题（3）",
+      "count": 78
+    }
+  ],
+  "summary": [
+    {
+      "file": "1.安全生产知识（1）1967763811012317184.pdf",
+      "title": "安全生产知识（1）",
+      "sectionId": "basic-safety-1",
+      "count": 163
+    },
+    {
+      "file": "1.拆除工程1967763831702818816.pdf",
+      "title": "拆除工程",
+      "sectionId": "tech2-1",
+      "count": 5
+    },
+    {
+      "file": "1.法规部分（1）1967763813742809088.pdf",
+      "title": "法规部分（1）",
+      "sectionId": "basic-law-1",
+      "count": 111
+    },
+    {
+      "file": "1.技术部分（1）1967763820826988544.pdf",
+      "title": "技术部分（1）",
+      "sectionId": "basic-tech-1",
+      "count": 98
+    },
+    {
+      "file": "2.安全生产知识（2）1967763811700183040.pdf",
+      "title": "安全生产知识（2）",
+      "sectionId": "basic-safety-2",
+      "count": 160
+    },
+    {
+      "file": "2.垂直运输1967763832269049856.pdf",
+      "title": "垂直运输",
+      "sectionId": "tech2-2",
+      "count": 2
+    },
+    {
+      "file": "2.法规部分（2）1967763814543921152.pdf",
+      "title": "法规部分（2）",
+      "sectionId": "basic-law-2",
+      "count": 95
+    },
+    {
+      "file": "2.技术部分（2）1967763821560991744.pdf",
+      "title": "技术部分（2）",
+      "sectionId": "basic-tech-2",
+      "count": 84
+    },
+    {
+      "file": "3.法规部分（3）1967763815110152192.pdf",
+      "title": "法规部分（3）",
+      "sectionId": "basic-law-3",
+      "count": 89
+    },
+    {
+      "file": "3.技术部分（3）1967763822160777216.pdf",
+      "title": "技术部分（3）",
+      "sectionId": "basic-tech-3",
+      "count": 100
+    },
+    {
+      "file": "3.职业卫生1967763832906584064.pdf",
+      "title": "职业卫生",
+      "sectionId": "tech2-3",
+      "count": 3
+    },
+    {
+      "file": "4.法规部分（4）1967763815730909184.pdf",
+      "title": "法规部分（4）",
+      "sectionId": "basic-law-4",
+      "count": 90
+    },
+    {
+      "file": "4.高处作业1967763834525585408.pdf",
+      "title": "高处作业",
+      "sectionId": "tech2-4",
+      "count": 4
+    },
+    {
+      "file": "4.技术部分（4）1967763822735396864.pdf",
+      "title": "技术部分（4）",
+      "sectionId": "basic-tech-4",
+      "count": 82
+    },
+    {
+      "file": "5.法规部分（5）1967763816292945920.pdf",
+      "title": "法规部分（5）",
+      "sectionId": "basic-law-5",
+      "count": 92
+    },
+    {
+      "file": "5.焊接工程1967763835104399360.pdf",
+      "title": "焊接工程",
+      "sectionId": "tech2-5",
+      "count": 3
+    },
+    {
+      "file": "5.技术部分（5）1967763823326793728.pdf",
+      "title": "技术部分（5）",
+      "sectionId": "basic-tech-5",
+      "count": 95
+    },
+    {
+      "file": "6.法规部分（6）1967763816896925696.pdf",
+      "title": "法规部分（6）",
+      "sectionId": "basic-law-6",
+      "count": 105
+    },
+    {
+      "file": "6.技术部分（6）1967763823930773504.pdf",
+      "title": "技术部分（6）",
+      "sectionId": "basic-tech-6",
+      "count": 109
+    },
+    {
+      "file": "6.季节施工1967763835767099392.pdf",
+      "title": "季节施工",
+      "sectionId": "tech2-6",
+      "count": 16
+    },
+    {
+      "file": "7.法规部分（7）1967763817463156736.pdf",
+      "title": "法规部分（7）",
+      "sectionId": "basic-law-7",
+      "count": 113
+    },
+    {
+      "file": "7.技术部分（7）1967763824614445056.pdf",
+      "title": "技术部分（7）",
+      "sectionId": "basic-tech-7",
+      "count": 100
+    },
+    {
+      "file": "7.压力容器1967763836383662080.pdf",
+      "title": "压力容器",
+      "sectionId": "tech2-7",
+      "count": 12
+    },
+    {
+      "file": "8.法规部分（8）1967763818075525120.pdf",
+      "title": "法规部分（8）",
+      "sectionId": "basic-law-8",
+      "count": 117
+    },
+    {
+      "file": "8.技术部分（8）1967763825180676096.pdf",
+      "title": "技术部分（8）",
+      "sectionId": "basic-tech-8",
+      "count": 106
+    },
+    {
+      "file": "8.脚手架1967763837075722240.pdf",
+      "title": "脚手架",
+      "sectionId": "tech2-8",
+      "count": 3
+    },
+    {
+      "file": "9.法规部分（9）1967763818696282112.pdf",
+      "title": "法规部分（9）",
+      "sectionId": "basic-law-9",
+      "count": 99
+    },
+    {
+      "file": "9.技术部分（9）1967763825876930560.pdf",
+      "title": "技术部分（9）",
+      "sectionId": "basic-tech-9",
+      "count": 103
+    },
+    {
+      "file": "9.临时用电1967763837650341888.pdf",
+      "title": "临时用电",
+      "sectionId": "tech2-9",
+      "count": 3
+    },
+    {
+      "file": "10.技术部分（10）1967763826443161600.pdf",
+      "title": "技术部分（10）",
+      "sectionId": "basic-tech-10",
+      "count": 89
+    },
+    {
+      "file": "10.模板工程1967763838308847616.pdf",
+      "title": "模板工程",
+      "sectionId": "tech2-10",
+      "count": 4
+    },
+    {
+      "file": "11.技术部分（11）1967763827105861632.pdf",
+      "title": "技术部分（11）",
+      "sectionId": "basic-tech-11",
+      "count": 100
+    },
+    {
+      "file": "11.起重吊装1967763838975741952.pdf",
+      "title": "起重吊装",
+      "sectionId": "tech2-11",
+      "count": 2
+    },
+    {
+      "file": "12.技术部分（12）1967763827722424320.pdf",
+      "title": "技术部分（12）",
+      "sectionId": "basic-tech-12",
+      "count": 93
+    },
+    {
+      "file": "12.施工防火1967763839617470464.pdf",
+      "title": "施工防火",
+      "sectionId": "tech2-12",
+      "count": 8
+    },
+    {
+      "file": "13.土方工程1967763840217255936.pdf",
+      "title": "土方工程",
+      "sectionId": "tech2-13",
+      "count": 7
+    },
+    {
+      "file": "13.新增考题（1）1967763828431261696.pdf",
+      "title": "新增考题（1）",
+      "sectionId": "special-new-1",
+      "count": 70
+    },
+    {
+      "file": "14.新增考题（2）1967763829035241472.pdf",
+      "title": "新增考题（2）",
+      "sectionId": "special-new-2",
+      "count": 84
+    },
+    {
+      "file": "15.新增考题（3）1967763829693747200.pdf",
+      "title": "新增考题（3）",
+      "sectionId": "special-new-3",
+      "count": 78
+    }
+  ],
+  "total": 2697
+}
