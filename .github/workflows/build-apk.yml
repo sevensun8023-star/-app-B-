@@ -17,8 +17,17 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '22'
           cache: npm
+
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+
+      - name: Setup Android SDK
+        uses: android-actions/setup-android@v3
 
       - name: Install dependencies
         run: npm ci
@@ -26,20 +35,14 @@ jobs:
       - name: Build web app
         run: npm run build
 
-      - name: Sync Capacitor Android
-        run: |
-          if [ ! -f android/settings.gradle ] || [ ! -f android/gradlew ]; then
-            echo "Android project incomplete, regenerating..."
-            rm -rf android
-            npx cap add android
-          fi
-          npx cap sync android
+      - name: Remove incomplete Android project
+        run: rm -rf android
 
-      - name: Setup Java
-        uses: actions/setup-java@v4
-        with:
-          distribution: temurin
-          java-version: '21'
+      - name: Add Android platform
+        run: npx cap add android
+
+      - name: Sync Capacitor
+        run: npx cap sync android
 
       - name: Build debug APK
         working-directory: android
@@ -48,6 +51,6 @@ jobs:
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: 练题助手-apk
+          name: practice-app-apk
           path: android/app/build/outputs/apk/debug/app-debug.apk
           retention-days: 90
