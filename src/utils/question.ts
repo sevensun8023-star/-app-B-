@@ -4,6 +4,11 @@ export function getOptionLetter(option: string): string {
   return option.charAt(0)
 }
 
+/** Strip leading "A." / "A. " prefix from stored option text */
+export function getOptionText(option: string): string {
+  return option.replace(/^[A-E]\.\s?/, '')
+}
+
 export function normalizeAnswer(answer: string | string[]): string[] {
   return Array.isArray(answer) ? [...answer].sort() : [answer]
 }

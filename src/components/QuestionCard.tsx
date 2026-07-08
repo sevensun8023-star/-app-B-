@@ -1,5 +1,5 @@
 import type { Question } from '../types'
-import { getOptionLetter, getTypeLabel } from '../utils/question'
+import { getOptionLetter, getOptionText, getTypeLabel } from '../utils/question'
 import './QuestionCard.css'
 
 interface QuestionCardProps {
@@ -69,7 +69,7 @@ export function QuestionCard({
               onClick={() => toggle(letter)}
             >
               <span className="option-letter">{letter}</span>
-              <span className="option-content">{opt.slice(3)}</span>
+              <span className="option-content">{getOptionText(opt)}</span>
             </button>
           )
         })}

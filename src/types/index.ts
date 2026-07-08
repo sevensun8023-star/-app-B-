@@ -46,6 +46,7 @@ export interface ExamResult {
   duration: number
   passed: boolean
   completedAt: number
+  wrongQuestionIds?: string[]
 }
 
 export interface UserProgress {

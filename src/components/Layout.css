@@ -5,12 +5,18 @@
   max-width: 480px;
   margin: 0 auto;
   background: var(--bg);
+  padding-top: env(safe-area-inset-top);
 }
 
 .app-main {
   flex: 1;
-  padding: 16px 16px 80px;
+  padding: 16px 16px calc(80px + env(safe-area-inset-bottom));
   overflow-y: auto;
+}
+
+.app-main-full {
+  padding: 0 0 env(safe-area-inset-bottom);
+  overflow: hidden;
 }
 
 .bottom-nav {

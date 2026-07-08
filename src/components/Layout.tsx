@@ -10,28 +10,31 @@ const tabs = [
 
 export function Layout({ children }: { children: React.ReactNode }) {
   const location = useLocation()
+  const hideNav = location.pathname.startsWith('/practice')
 
   return (
     <div className="app-layout">
-      <main className="app-main">{children}</main>
-      <nav className="bottom-nav">
-        {tabs.map((tab) => {
-          const active =
-            tab.path === '/'
-              ? location.pathname === '/'
-              : location.pathname.startsWith(tab.path)
-          return (
-            <Link
-              key={tab.path}
-              to={tab.path}
-              className={`nav-item ${active ? 'active' : ''}`}
-            >
-              <span className="nav-icon">{tab.icon}</span>
-              <span className="nav-label">{tab.label}</span>
-            </Link>
-          )
-        })}
-      </nav>
+      <main className={`app-main ${hideNav ? 'app-main-full' : ''}`}>{children}</main>
+      {!hideNav && (
+        <nav className="bottom-nav">
+          {tabs.map((tab) => {
+            const active =
+              tab.path === '/'
+                ? location.pathname === '/'
+                : location.pathname.startsWith(tab.path)
+            return (
+              <Link
+                key={tab.path}
+                to={tab.path}
+                className={`nav-item ${active ? 'active' : ''}`}
+              >
+                <span className="nav-icon">{tab.icon}</span>
+                <span className="nav-label">{tab.label}</span>
+              </Link>
+            )
+          })}
+        </nav>
+      )}
     </div>
   )
 }
