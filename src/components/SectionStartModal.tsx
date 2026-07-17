@@ -14,6 +14,7 @@ interface SectionStartModalProps {
   onClose: () => void
   onContinue: (startIndex: number) => void
   onRestart: () => void
+  onMarkComplete: () => void
 }
 
 export function SectionStartModal({
@@ -23,6 +24,7 @@ export function SectionStartModal({
   onClose,
   onContinue,
   onRestart,
+  onMarkComplete,
 }: SectionStartModalProps) {
   const { progress } = useProgress()
   const sectionQuestions = getQuestionsBySection(practiceId)
@@ -30,6 +32,7 @@ export function SectionStartModal({
   const done = getSectionDoneCount(progress, sectionQuestions)
   const hasProgress = hasSectionProgress(progress, sectionQuestions)
   const resumeIndex = getSectionResumeIndex(progress, sectionQuestions)
+  const allDone = done >= total && total > 0
 
   if (!open) return null
 
@@ -43,7 +46,9 @@ export function SectionStartModal({
             <>
               ，已完成 <strong>{done}</strong> 题
               {done < total && (
-                <>，将从第 <strong>{resumeIndex + 1}</strong> 题继续</>
+                <>
+                  ，将从第 <strong>{resumeIndex + 1}</strong> 题继续
+                </>
               )}
             </>
           )}
@@ -53,25 +58,32 @@ export function SectionStartModal({
           <button
             type="button"
             className="modal-btn continue"
-            disabled={!hasProgress}
+            disabled={!hasProgress || allDone}
             onClick={() => onContinue(resumeIndex)}
           >
             继续练习
           </button>
-          <button
-            type="button"
-            className="modal-btn restart"
-            onClick={onRestart}
-          >
+          <button type="button" className="modal-btn restart" onClick={onRestart}>
             重新练习
           </button>
+          {!allDone && (
+            <button
+              type="button"
+              className="modal-btn mark-done"
+              onClick={onMarkComplete}
+            >
+              一键标记本章已做
+            </button>
+          )}
         </div>
 
         {!hasProgress && (
-          <p className="section-modal-hint">暂无练习记录，请开始新练习</p>
+          <p className="section-modal-hint">
+            暂无练习记录。若重装丢失进度，可用「一键标记本章已做」
+          </p>
         )}
 
-        {hasProgress && done >= total && (
+        {allDone && (
           <p className="section-modal-hint">本章已全部完成，重新练习将清除记录</p>
         )}
 

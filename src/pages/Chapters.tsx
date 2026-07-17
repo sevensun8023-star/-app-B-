@@ -108,7 +108,7 @@ function TreeNode({
 
 export function ChaptersPage() {
   const navigate = useNavigate()
-  const { clearSectionProgress } = useProgress()
+  const { clearSectionProgress, markSectionComplete } = useProgress()
   const [modalSection, setModalSection] = useState<SectionNode | null>(null)
 
   const handlePracticeClick = (node: SectionNode) => {
@@ -134,6 +134,13 @@ export function ChaptersPage() {
     navigate(`/practice/section/${modalSection.practiceId}`, {
       state: { startIndex: 0, fresh: true },
     })
+  }
+
+  const handleMarkComplete = () => {
+    if (!modalSection?.practiceId) return
+    const sectionQuestions = getQuestionsBySection(modalSection.practiceId)
+    markSectionComplete(modalSection.practiceId, sectionQuestions)
+    setModalSection(null)
   }
 
   return (
@@ -164,6 +171,7 @@ export function ChaptersPage() {
           onClose={() => setModalSection(null)}
           onContinue={handleContinue}
           onRestart={handleRestart}
+          onMarkComplete={handleMarkComplete}
         />
       )}
     </div>

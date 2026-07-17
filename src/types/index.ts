@@ -22,12 +22,20 @@ export interface MockExam {
   id: string
   title: string
   description?: string
+  category?: string
+  questionCount?: number
   questionIds: string[]
   duration: number
   passScore: number
 }
 
-export type PracticeMode = 'section' | 'random' | 'mock' | 'wrong'
+export type PracticeMode =
+  | 'section'
+  | 'random'
+  | 'mock'
+  | 'wrong'
+  | 'paper'
+  | 'unanswered'
 
 export interface AnswerRecord {
   questionId: string

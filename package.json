@@ -16,7 +16,9 @@
   "dependencies": {
     "@capacitor/android": "^8.4.1",
     "@capacitor/app": "^8.0.0",
+    "@capacitor/browser": "^8.0.4",
     "@capacitor/cli": "^8.4.1",
+    "@capacitor/clipboard": "^8.0.1",
     "@capacitor/core": "^8.4.1",
     "pdf-parse": "^2.4.5",
     "react": "^19.2.7",

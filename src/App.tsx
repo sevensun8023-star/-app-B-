@@ -4,6 +4,7 @@ import { ProgressProvider } from './hooks/useProgress'
 import { ChaptersPage } from './pages/Chapters'
 import { ExamsPage } from './pages/Exams'
 import { HomePage } from './pages/Home'
+import { OfficialBankPage } from './pages/OfficialBank'
 import { PracticePage } from './pages/Practice'
 import { ProfilePage } from './pages/Profile'
 import { ResultPage } from './pages/Result'
@@ -17,6 +18,7 @@ export default function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/chapters" element={<ChaptersPage />} />
             <Route path="/exams" element={<ExamsPage />} />
+            <Route path="/official" element={<OfficialBankPage />} />
             <Route path="/profile" element={<ProfilePage />} />
             <Route path="/practice/:mode" element={<PracticePage />} />
             <Route path="/practice/:mode/:id" element={<PracticePage />} />

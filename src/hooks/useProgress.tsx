@@ -4,6 +4,7 @@ import {
   clearSectionProgress as clearSectionProgressStorage,
   getOverallStats,
   loadProgress,
+  markSectionComplete as markSectionCompleteStorage,
   recordAnswer,
   saveExamResult,
   saveProgress,
@@ -17,6 +18,7 @@ interface ProgressContextValue {
   addExamResult: (result: ExamResult) => void
   resetProgress: () => void
   clearSectionProgress: (sectionId: string, sectionQuestions: Question[]) => void
+  markSectionComplete: (sectionId: string, sectionQuestions: Question[]) => void
 }
 
 const ProgressContext = createContext<ProgressContextValue | null>(null)
@@ -59,6 +61,13 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
     [persist, progress],
   )
 
+  const markSectionComplete = useCallback(
+    (sectionId: string, sectionQuestions: Question[]) => {
+      persist(markSectionCompleteStorage(progress, sectionId, sectionQuestions))
+    },
+    [persist, progress],
+  )
+
   const stats = useMemo(() => getOverallStats(progress), [progress])
 
   const value = useMemo(
@@ -69,8 +78,17 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
       addExamResult,
       resetProgress,
       clearSectionProgress,
+      markSectionComplete,
     }),
-    [progress, stats, submitAnswer, addExamResult, resetProgress, clearSectionProgress],
+    [
+      progress,
+      stats,
+      submitAnswer,
+      addExamResult,
+      resetProgress,
+      clearSectionProgress,
+      markSectionComplete,
+    ],
   )
 
   return (

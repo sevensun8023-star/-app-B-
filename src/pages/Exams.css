@@ -1,7 +1,18 @@
+.paper-section {
+  margin-bottom: 20px;
+}
+
+.paper-section-title {
+  margin: 0 0 10px;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text);
+}
+
 .exam-list {
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 12px;
 }
 
 .exam-card {

@@ -65,7 +65,17 @@ export function HomePage() {
       </div>
 
       <div className="quick-actions">
-        <Link to="/practice/random" className="action-card primary">
+        <Link to="/practice/unanswered" className="action-card primary">
+          <span className="action-icon">📝</span>
+          <div>
+            <h3>未做题库</h3>
+            <p>
+              还剩 {Math.max(0, total - Object.keys(progress.answered).length)} 道未做，做一题存一题
+            </p>
+          </div>
+        </Link>
+
+        <Link to="/practice/random" className="action-card">
           <span className="action-icon">🎲</span>
           <div>
             <h3>随机练题</h3>
@@ -78,6 +88,22 @@ export function HomePage() {
           <div>
             <h3>错题本</h3>
             <p>{stats.wrongCount} 道待复习</p>
+          </div>
+        </Link>
+
+        <Link to="/exams" className="action-card">
+          <span className="action-icon">📋</span>
+          <div>
+            <h3>模拟试卷</h3>
+            <p>18 套冲刺/预测/模拟卷</p>
+          </div>
+        </Link>
+
+        <Link to="/official" className="action-card">
+          <span className="action-icon">🌐</span>
+          <div>
+            <h3>官方练习题库</h3>
+            <p>打开四川建设学习网在线刷题</p>
           </div>
         </Link>
       </div>

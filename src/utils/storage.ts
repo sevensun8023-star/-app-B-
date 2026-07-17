@@ -151,3 +151,30 @@ export function clearSectionProgress(
   }
   return { ...progress, answered, wrongBook, sectionStats }
 }
+
+/** Mark all questions in a section as done (for restoring progress after reinstall). */
+export function markSectionComplete(
+  progress: UserProgress,
+  sectionId: string,
+  sectionQuestions: Question[],
+): UserProgress {
+  let next = { ...progress, answered: { ...progress.answered } }
+  const now = Date.now()
+  for (const q of sectionQuestions) {
+    if (next.answered[q.id]) continue
+    next.answered[q.id] = {
+      questionId: q.id,
+      userAnswer: q.answer,
+      isCorrect: true,
+      answeredAt: now,
+    }
+  }
+  next.sectionStats = {
+    ...next.sectionStats,
+    [sectionId]: {
+      done: sectionQuestions.length,
+      correct: sectionQuestions.filter((q) => next.answered[q.id]?.isCorrect).length,
+    },
+  }
+  return next
+}

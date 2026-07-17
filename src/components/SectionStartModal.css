@@ -79,6 +79,13 @@
   border: 2px solid #f5a623;
 }
 
+.modal-btn.mark-done {
+  background: #fff8ee;
+  color: #666;
+  border: 1px dashed #f5a623;
+  font-size: 14px;
+}
+
 .section-modal-hint {
   margin: 12px 0 0;
   font-size: 12px;
